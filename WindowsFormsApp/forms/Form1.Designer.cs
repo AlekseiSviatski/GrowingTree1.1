@@ -30,90 +30,90 @@ namespace WindowsFormsApp
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.SviatskiRadioButton = new System.Windows.Forms.RadioButton();
-            this.ArtuhovRadioButton = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TreeNameBox = new System.Windows.Forms.TextBox();
-            this.TreeAgeBox = new System.Windows.Forms.TextBox();
-            this.TreeTrunkLengthBox = new System.Windows.Forms.TextBox();
+            this.rbSviatski = new System.Windows.Forms.RadioButton();
+            this.rbArtuhov = new System.Windows.Forms.RadioButton();
+            this.gbWaterers = new System.Windows.Forms.GroupBox();
+            this.tbTreeName = new System.Windows.Forms.TextBox();
+            this.tbTreeAge = new System.Windows.Forms.TextBox();
+            this.tbTrunkLength = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.TreeCrownVolubeBox = new System.Windows.Forms.TextBox();
+            this.tbCrownVolube = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.TreeInfoApplyButton = new System.Windows.Forms.Button();
-            this.TreeGrowButton = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
-            this.OutputTextBox = new System.Windows.Forms.RichTextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbTreeInfo = new System.Windows.Forms.GroupBox();
+            this.bTreeInfoApply = new System.Windows.Forms.Button();
+            this.bTreeGrow = new System.Windows.Forms.Button();
+            this.bClear = new System.Windows.Forms.Button();
+            this.tbOutput = new System.Windows.Forms.RichTextBox();
+            this.gbOutputInfo = new System.Windows.Forms.GroupBox();
+            this.gbWaterers.SuspendLayout();
+            this.gbTreeInfo.SuspendLayout();
+            this.gbOutputInfo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // SviatskiRadioButton
+            // rbSviatski
             // 
-            this.SviatskiRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.SviatskiRadioButton.AutoSize = true;
-            this.SviatskiRadioButton.Location = new System.Drawing.Point(6, 38);
-            this.SviatskiRadioButton.Name = "SviatskiRadioButton";
-            this.SviatskiRadioButton.Size = new System.Drawing.Size(183, 17);
-            this.SviatskiRadioButton.TabIndex = 6;
-            this.SviatskiRadioButton.Text = "Святский Алексей Николаевич";
-            this.SviatskiRadioButton.UseVisualStyleBackColor = true;
+            this.rbSviatski.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.rbSviatski.AutoSize = true;
+            this.rbSviatski.Location = new System.Drawing.Point(6, 38);
+            this.rbSviatski.Name = "rbSviatski";
+            this.rbSviatski.Size = new System.Drawing.Size(183, 17);
+            this.rbSviatski.TabIndex = 6;
+            this.rbSviatski.Text = "Святский Алексей Николаевич";
+            this.rbSviatski.UseVisualStyleBackColor = true;
             // 
-            // ArtuhovRadioButton
+            // rbArtuhov
             // 
-            this.ArtuhovRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.ArtuhovRadioButton.AutoSize = true;
-            this.ArtuhovRadioButton.Checked = true;
-            this.ArtuhovRadioButton.Location = new System.Drawing.Point(6, 19);
-            this.ArtuhovRadioButton.Name = "ArtuhovRadioButton";
-            this.ArtuhovRadioButton.Size = new System.Drawing.Size(182, 17);
-            this.ArtuhovRadioButton.TabIndex = 7;
-            this.ArtuhovRadioButton.TabStop = true;
-            this.ArtuhovRadioButton.Text = "Артюхов Александр Сергеевич";
-            this.ArtuhovRadioButton.UseVisualStyleBackColor = true;
+            this.rbArtuhov.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.rbArtuhov.AutoSize = true;
+            this.rbArtuhov.Checked = true;
+            this.rbArtuhov.Location = new System.Drawing.Point(6, 19);
+            this.rbArtuhov.Name = "rbArtuhov";
+            this.rbArtuhov.Size = new System.Drawing.Size(182, 17);
+            this.rbArtuhov.TabIndex = 7;
+            this.rbArtuhov.TabStop = true;
+            this.rbArtuhov.Text = "Артюхов Александр Сергеевич";
+            this.rbArtuhov.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // gbWaterers
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox1.Controls.Add(this.ArtuhovRadioButton);
-            this.groupBox1.Controls.Add(this.SviatskiRadioButton);
-            this.groupBox1.Location = new System.Drawing.Point(12, 149);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(351, 61);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Кто будет поливать дерево?";
+            this.gbWaterers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gbWaterers.Controls.Add(this.rbArtuhov);
+            this.gbWaterers.Controls.Add(this.rbSviatski);
+            this.gbWaterers.Location = new System.Drawing.Point(12, 149);
+            this.gbWaterers.Name = "gbWaterers";
+            this.gbWaterers.Size = new System.Drawing.Size(351, 61);
+            this.gbWaterers.TabIndex = 8;
+            this.gbWaterers.TabStop = false;
+            this.gbWaterers.Text = "Кто будет поливать дерево?";
             // 
-            // TreeNameBox
+            // tbTreeName
             // 
-            this.TreeNameBox.Location = new System.Drawing.Point(188, 17);
-            this.TreeNameBox.Name = "TreeNameBox";
-            this.TreeNameBox.Size = new System.Drawing.Size(77, 20);
-            this.TreeNameBox.TabIndex = 10;
-            this.TreeNameBox.Text = "Яблоня";
+            this.tbTreeName.Location = new System.Drawing.Point(188, 17);
+            this.tbTreeName.Name = "tbTreeName";
+            this.tbTreeName.Size = new System.Drawing.Size(77, 20);
+            this.tbTreeName.TabIndex = 10;
+            this.tbTreeName.Text = "Яблоня";
             // 
-            // TreeAgeBox
+            // tbTreeAge
             // 
-            this.TreeAgeBox.Location = new System.Drawing.Point(188, 43);
-            this.TreeAgeBox.Name = "TreeAgeBox";
-            this.TreeAgeBox.Size = new System.Drawing.Size(77, 20);
-            this.TreeAgeBox.TabIndex = 11;
-            this.TreeAgeBox.Text = "10";
-            this.TreeAgeBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TreeAgeBox_KeyPress);
+            this.tbTreeAge.Location = new System.Drawing.Point(188, 43);
+            this.tbTreeAge.Name = "tbTreeAge";
+            this.tbTreeAge.Size = new System.Drawing.Size(77, 20);
+            this.tbTreeAge.TabIndex = 11;
+            this.tbTreeAge.Text = "10";
+            this.tbTreeAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TreeAgeBox_KeyPress);
             // 
-            // TreeTrunkLengthBox
+            // tbTrunkLength
             // 
-            this.TreeTrunkLengthBox.Location = new System.Drawing.Point(188, 69);
-            this.TreeTrunkLengthBox.Name = "TreeTrunkLengthBox";
-            this.TreeTrunkLengthBox.Size = new System.Drawing.Size(77, 20);
-            this.TreeTrunkLengthBox.TabIndex = 12;
-            this.TreeTrunkLengthBox.Text = "12";
-            this.TreeTrunkLengthBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TreeTrunkLengthBox_KeyPress);
+            this.tbTrunkLength.Location = new System.Drawing.Point(188, 69);
+            this.tbTrunkLength.Name = "tbTrunkLength";
+            this.tbTrunkLength.Size = new System.Drawing.Size(77, 20);
+            this.tbTrunkLength.TabIndex = 12;
+            this.tbTrunkLength.Text = "12";
+            this.tbTrunkLength.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TreeTrunkLengthBox_KeyPress);
             // 
             // label1
             // 
@@ -124,14 +124,14 @@ namespace WindowsFormsApp
             this.label1.TabIndex = 13;
             this.label1.Text = "Название:";
             // 
-            // TreeCrownVolubeBox
+            // tbCrownVolube
             // 
-            this.TreeCrownVolubeBox.Location = new System.Drawing.Point(188, 95);
-            this.TreeCrownVolubeBox.Name = "TreeCrownVolubeBox";
-            this.TreeCrownVolubeBox.Size = new System.Drawing.Size(77, 20);
-            this.TreeCrownVolubeBox.TabIndex = 14;
-            this.TreeCrownVolubeBox.Text = "30";
-            this.TreeCrownVolubeBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TreeCrownVolumeBox_KeyPress);
+            this.tbCrownVolube.Location = new System.Drawing.Point(188, 95);
+            this.tbCrownVolube.Name = "tbCrownVolube";
+            this.tbCrownVolube.Size = new System.Drawing.Size(77, 20);
+            this.tbCrownVolube.TabIndex = 14;
+            this.tbCrownVolube.Text = "30";
+            this.tbCrownVolube.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TreeCrownVolumeBox_KeyPress);
             // 
             // label2
             // 
@@ -168,77 +168,77 @@ namespace WindowsFormsApp
             this.label5.TabIndex = 18;
             this.label5.Text = "Объем кроны:";
             // 
-            // groupBox2
+            // gbTreeInfo
             // 
-            this.groupBox2.Controls.Add(this.TreeInfoApplyButton);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.TreeCrownVolubeBox);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.TreeTrunkLengthBox);
-            this.groupBox2.Controls.Add(this.TreeAgeBox);
-            this.groupBox2.Controls.Add(this.TreeNameBox);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(351, 130);
-            this.groupBox2.TabIndex = 19;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Информация о дереве";
+            this.gbTreeInfo.Controls.Add(this.bTreeInfoApply);
+            this.gbTreeInfo.Controls.Add(this.label5);
+            this.gbTreeInfo.Controls.Add(this.label4);
+            this.gbTreeInfo.Controls.Add(this.label3);
+            this.gbTreeInfo.Controls.Add(this.label2);
+            this.gbTreeInfo.Controls.Add(this.tbCrownVolube);
+            this.gbTreeInfo.Controls.Add(this.label1);
+            this.gbTreeInfo.Controls.Add(this.tbTrunkLength);
+            this.gbTreeInfo.Controls.Add(this.tbTreeAge);
+            this.gbTreeInfo.Controls.Add(this.tbTreeName);
+            this.gbTreeInfo.Location = new System.Drawing.Point(12, 12);
+            this.gbTreeInfo.Name = "gbTreeInfo";
+            this.gbTreeInfo.Size = new System.Drawing.Size(351, 130);
+            this.gbTreeInfo.TabIndex = 19;
+            this.gbTreeInfo.TabStop = false;
+            this.gbTreeInfo.Text = "Информация о дереве";
             // 
-            // TreeInfoApplyButton
+            // bTreeInfoApply
             // 
-            this.TreeInfoApplyButton.Location = new System.Drawing.Point(281, 43);
-            this.TreeInfoApplyButton.Name = "TreeInfoApplyButton";
-            this.TreeInfoApplyButton.Size = new System.Drawing.Size(64, 46);
-            this.TreeInfoApplyButton.TabIndex = 19;
-            this.TreeInfoApplyButton.Text = "ОК";
-            this.TreeInfoApplyButton.UseVisualStyleBackColor = true;
-            this.TreeInfoApplyButton.Click += new System.EventHandler(this.TreeInfoApplyButton_Click_1);
+            this.bTreeInfoApply.Location = new System.Drawing.Point(281, 43);
+            this.bTreeInfoApply.Name = "bTreeInfoApply";
+            this.bTreeInfoApply.Size = new System.Drawing.Size(64, 46);
+            this.bTreeInfoApply.TabIndex = 19;
+            this.bTreeInfoApply.Text = "ОК";
+            this.bTreeInfoApply.UseVisualStyleBackColor = true;
+            this.bTreeInfoApply.Click += new System.EventHandler(this.TreeInfoApplyButton_Click_1);
             // 
-            // TreeGrowButton
+            // bTreeGrow
             // 
-            this.TreeGrowButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.TreeGrowButton.Location = new System.Drawing.Point(12, 222);
-            this.TreeGrowButton.Name = "TreeGrowButton";
-            this.TreeGrowButton.Size = new System.Drawing.Size(351, 30);
-            this.TreeGrowButton.TabIndex = 22;
-            this.TreeGrowButton.Text = "Вырастить дерево (+1 год)";
-            this.TreeGrowButton.UseVisualStyleBackColor = true;
-            this.TreeGrowButton.Click += new System.EventHandler(this.TreeGrowButton_Click);
+            this.bTreeGrow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.bTreeGrow.Location = new System.Drawing.Point(12, 222);
+            this.bTreeGrow.Name = "bTreeGrow";
+            this.bTreeGrow.Size = new System.Drawing.Size(351, 30);
+            this.bTreeGrow.TabIndex = 22;
+            this.bTreeGrow.Text = "Вырастить дерево (+1 год)";
+            this.bTreeGrow.UseVisualStyleBackColor = true;
+            this.bTreeGrow.Click += new System.EventHandler(this.TreeGrowButton_Click);
             // 
-            // ClearButton
+            // bClear
             // 
-            this.ClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ClearButton.Location = new System.Drawing.Point(369, 222);
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(386, 30);
-            this.ClearButton.TabIndex = 23;
-            this.ClearButton.Text = "Очистить";
-            this.ClearButton.UseVisualStyleBackColor = true;
-            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            this.bClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bClear.Location = new System.Drawing.Point(369, 222);
+            this.bClear.Name = "bClear";
+            this.bClear.Size = new System.Drawing.Size(386, 30);
+            this.bClear.TabIndex = 23;
+            this.bClear.Text = "Очистить";
+            this.bClear.UseVisualStyleBackColor = true;
+            this.bClear.Click += new System.EventHandler(this.ClearButton_Click);
             // 
-            // OutputTextBox
+            // tbOutput
             // 
-            this.OutputTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.OutputTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.OutputTextBox.Location = new System.Drawing.Point(6, 19);
-            this.OutputTextBox.Name = "OutputTextBox";
-            this.OutputTextBox.ReadOnly = true;
-            this.OutputTextBox.Size = new System.Drawing.Size(374, 173);
-            this.OutputTextBox.TabIndex = 20;
-            this.OutputTextBox.Text = "";
+            this.tbOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbOutput.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tbOutput.Location = new System.Drawing.Point(6, 19);
+            this.tbOutput.Name = "tbOutput";
+            this.tbOutput.ReadOnly = true;
+            this.tbOutput.Size = new System.Drawing.Size(374, 173);
+            this.tbOutput.TabIndex = 20;
+            this.tbOutput.Text = "";
             // 
-            // groupBox3
+            // gbOutputInfo
             // 
-            this.groupBox3.Controls.Add(this.OutputTextBox);
-            this.groupBox3.Location = new System.Drawing.Point(369, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(386, 198);
-            this.groupBox3.TabIndex = 24;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Вывод информации о поливах и росте дерева";
+            this.gbOutputInfo.Controls.Add(this.tbOutput);
+            this.gbOutputInfo.Location = new System.Drawing.Point(369, 12);
+            this.gbOutputInfo.Name = "gbOutputInfo";
+            this.gbOutputInfo.Size = new System.Drawing.Size(386, 198);
+            this.gbOutputInfo.TabIndex = 24;
+            this.gbOutputInfo.TabStop = false;
+            this.gbOutputInfo.Text = "Вывод информации о поливах и росте дерева";
             // 
             // MainForm
             // 
@@ -247,43 +247,43 @@ namespace WindowsFormsApp
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(766, 264);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.ClearButton);
-            this.Controls.Add(this.TreeGrowButton);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbOutputInfo);
+            this.Controls.Add(this.bClear);
+            this.Controls.Add(this.bTreeGrow);
+            this.Controls.Add(this.gbTreeInfo);
+            this.Controls.Add(this.gbWaterers);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Вырасти дерево 1.1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
+            this.gbWaterers.ResumeLayout(false);
+            this.gbWaterers.PerformLayout();
+            this.gbTreeInfo.ResumeLayout(false);
+            this.gbTreeInfo.PerformLayout();
+            this.gbOutputInfo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.RadioButton SviatskiRadioButton;
-        private System.Windows.Forms.RadioButton ArtuhovRadioButton;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TreeNameBox;
-        private System.Windows.Forms.TextBox TreeAgeBox;
-        private System.Windows.Forms.TextBox TreeTrunkLengthBox;
+        private System.Windows.Forms.RadioButton rbSviatski;
+        private System.Windows.Forms.RadioButton rbArtuhov;
+        private System.Windows.Forms.GroupBox gbWaterers;
+        private System.Windows.Forms.TextBox tbTreeName;
+        private System.Windows.Forms.TextBox tbTreeAge;
+        private System.Windows.Forms.TextBox tbTrunkLength;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TreeCrownVolubeBox;
+        private System.Windows.Forms.TextBox tbCrownVolube;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button TreeInfoApplyButton;
-        private System.Windows.Forms.Button TreeGrowButton;
-        private System.Windows.Forms.Button ClearButton;
-        private System.Windows.Forms.RichTextBox OutputTextBox;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbTreeInfo;
+        private System.Windows.Forms.Button bTreeInfoApply;
+        private System.Windows.Forms.Button bTreeGrow;
+        private System.Windows.Forms.Button bClear;
+        private System.Windows.Forms.RichTextBox tbOutput;
+        private System.Windows.Forms.GroupBox gbOutputInfo;
     }
 }
 

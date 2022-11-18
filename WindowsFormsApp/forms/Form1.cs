@@ -22,14 +22,14 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
-        private void TreeInfoApplyButton_Click_1(object sender, EventArgs e)
+        private void bTreeInfoApply_Click_1(object sender, EventArgs e)
         {
-            if (TreeNameBox.Text == "" || TreeAgeBox.Text == "" || TreeTrunkLengthBox.Text == "" || TreeCrownVolubeBox.Text == "") MessageBox.Show(Constants.fieldsWarning, Constants.warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            if (tbTreeName.Text == "" || tbTreeAge.Text == "" || tbTrunkLength.Text == "" || tbCrownVolube.Text == "") MessageBox.Show(Constants.fieldsWarning, Constants.warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                EnteredTree = new Tree(TreeNameBox.Text, Convert.ToInt32(TreeAgeBox.Text), Convert.ToInt32(TreeTrunkLengthBox.Text), Convert.ToInt32(TreeCrownVolubeBox.Text));
+                EnteredTree = new Tree(tbTreeName.Text, Convert.ToInt32(tbTreeAge.Text), Convert.ToInt32(tbTrunkLength.Text), Convert.ToInt32(tbCrownVolube.Text));
 
-                string procedureText = $"INSERT INTO EnteredTree(Name, Age, TrunkLength, CrownVolume) VALUES ('{TreeNameBox.Text}', {TreeAgeBox.Text}, {TreeTrunkLengthBox.Text}, {TreeCrownVolubeBox.Text})";
+                string procedureText = $"INSERT INTO EnteredTree(Name, Age, TrunkLength, CrownVolume) VALUES ('{tbTreeName.Text}', {tbTreeAge.Text}, {tbTrunkLength.Text}, {tbCrownVolube.Text})";
                 using (SqlConnection connect = new SqlConnection(Constants.connectString))
                 {
                     SqlCommand addTree = new SqlCommand(procedureText, connect);
@@ -54,14 +54,14 @@ namespace WindowsFormsApp
                 }
                 Sviatski.watering = 0;
                 Artuhov.watering = 0;
-                OutputTextBox.Text += EnteredTree.TreeGetInfo() + "\n" + "\n";
+                tbOutput.Text += EnteredTree.TreeGetInfo() + "\n" + "\n";
             }
         }
-        private void ClearButton_Click(object sender, EventArgs e)
+        private void bClear_Click(object sender, EventArgs e)
         {
-            OutputTextBox.Text = "";
+            tbOutput.Text = "";
         }
-        private void TreeGrowButton_Click(object sender, EventArgs e)
+        private void bTreeGrow_Click(object sender, EventArgs e)
         {
             if (EnteredTree.name == default)
             {
@@ -69,18 +69,18 @@ namespace WindowsFormsApp
             }
             else
             {
-                if (SviatskiRadioButton.Checked)
+                if (rbSviatski.Checked)
                 {
                     Sviatski.AddWateringCount();
                     EnteredTree.Grow();
-                    using (SqlConnection connect1 = new SqlConnection(Constants.connectString))
+                    using (SqlConnection connect = new SqlConnection(Constants.connectString))
                     {
-                        SqlCommand updateTree = new SqlCommand(Constants.updateEnteredTree, connect1);
-                        SqlCommand updatePersonWateringCount = new SqlCommand(Constants.updateSviatskiWateringCount, connect1);
+                        SqlCommand updateTree = new SqlCommand(Constants.updateEnteredTree, connect);
+                        SqlCommand updatePersonWateringCount = new SqlCommand(Constants.updateSviatskiWateringCount, connect);
 
                         try
                         {
-                            connect1.Open();
+                            connect.Open();
                             updateTree.ExecuteNonQuery();
                             updatePersonWateringCount.ExecuteNonQuery();
                         }
@@ -90,22 +90,22 @@ namespace WindowsFormsApp
                         }
                         finally
                         {
-                            connect1.Close();
+                            connect.Close();
                         }
                     }
                 }
-                else if (ArtuhovRadioButton.Checked)
+                else if (rbArtuhov.Checked)
                 {
                     Artuhov.AddWateringCount();
                     EnteredTree.Grow();
-                    using (SqlConnection connect1 = new SqlConnection(Constants.connectString))
+                    using (SqlConnection connect = new SqlConnection(Constants.connectString))
                     {
-                        SqlCommand updateTree = new SqlCommand(Constants.updateEnteredTree, connect1);
-                        SqlCommand updatePersonWateringCount = new SqlCommand(Constants.updateArtuhovWateringCount, connect1);
+                        SqlCommand updateTree = new SqlCommand(Constants.updateEnteredTree, connect);
+                        SqlCommand updatePersonWateringCount = new SqlCommand(Constants.updateArtuhovWateringCount, connect);
 
                         try
                         {
-                            connect1.Open();
+                            connect.Open();
                             updateTree.ExecuteNonQuery();
                             updatePersonWateringCount.ExecuteNonQuery();
                         }
@@ -115,25 +115,25 @@ namespace WindowsFormsApp
                         }
                         finally
                         {
-                            connect1.Close();
+                            connect.Close();
                         }
                     }
                 }
 
-                OutputTextBox.Text += EnteredTree.TreeGetInfo() + "\n" + "\n" + Artuhov.PersonGetInfo() + "\n" + "\n" + Sviatski.PersonGetInfo() + "\n" + "\n";
+                tbOutput.Text += EnteredTree.TreeGetInfo() + "\n" + "\n" + Artuhov.PersonGetInfo() + "\n" + "\n" + Sviatski.PersonGetInfo() + "\n" + "\n";
             }
         }
-        private void TreeAgeBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void tbTreeAge_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8) e.Handled = true;
         }
 
-        private void TreeTrunkLengthBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void tbTrunkLength_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8) e.Handled = true;
         }
 
-        private void TreeCrownVolumeBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void tbCrownVolume_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 8) e.Handled = true;
         }
