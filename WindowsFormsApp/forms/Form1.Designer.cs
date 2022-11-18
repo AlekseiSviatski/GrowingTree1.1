@@ -104,7 +104,7 @@ namespace WindowsFormsApp
             this.tbTreeAge.Size = new System.Drawing.Size(77, 20);
             this.tbTreeAge.TabIndex = 11;
             this.tbTreeAge.Text = "10";
-            this.tbTreeAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TreeAgeBox_KeyPress);
+            this.tbTreeAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTreeAge_KeyPress);
             // 
             // tbTrunkLength
             // 
@@ -113,7 +113,7 @@ namespace WindowsFormsApp
             this.tbTrunkLength.Size = new System.Drawing.Size(77, 20);
             this.tbTrunkLength.TabIndex = 12;
             this.tbTrunkLength.Text = "12";
-            this.tbTrunkLength.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TreeTrunkLengthBox_KeyPress);
+            this.tbTrunkLength.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTrunkLength_KeyPress);
             // 
             // label1
             // 
@@ -131,7 +131,7 @@ namespace WindowsFormsApp
             this.tbCrownVolube.Size = new System.Drawing.Size(77, 20);
             this.tbCrownVolube.TabIndex = 14;
             this.tbCrownVolube.Text = "30";
-            this.tbCrownVolube.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TreeCrownVolumeBox_KeyPress);
+            this.tbCrownVolube.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCrownVolume_KeyPress);
             // 
             // label2
             // 
@@ -195,7 +195,7 @@ namespace WindowsFormsApp
             this.bTreeInfoApply.TabIndex = 19;
             this.bTreeInfoApply.Text = "ОК";
             this.bTreeInfoApply.UseVisualStyleBackColor = true;
-            this.bTreeInfoApply.Click += new System.EventHandler(this.TreeInfoApplyButton_Click_1);
+            this.bTreeInfoApply.Click += new System.EventHandler(this.bTreeInfoApply_Click_1);
             // 
             // bTreeGrow
             // 
@@ -206,7 +206,7 @@ namespace WindowsFormsApp
             this.bTreeGrow.TabIndex = 22;
             this.bTreeGrow.Text = "Вырастить дерево (+1 год)";
             this.bTreeGrow.UseVisualStyleBackColor = true;
-            this.bTreeGrow.Click += new System.EventHandler(this.TreeGrowButton_Click);
+            this.bTreeGrow.Click += new System.EventHandler(this.bTreeGrow_Click);
             // 
             // bClear
             // 
@@ -217,7 +217,7 @@ namespace WindowsFormsApp
             this.bClear.TabIndex = 23;
             this.bClear.Text = "Очистить";
             this.bClear.UseVisualStyleBackColor = true;
-            this.bClear.Click += new System.EventHandler(this.ClearButton_Click);
+            this.bClear.Click += new System.EventHandler(this.bClear_Click);
             // 
             // tbOutput
             // 
